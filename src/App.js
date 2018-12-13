@@ -1,7 +1,6 @@
 import React, { Component, Fragment } from "react";
 import {Route} from "react-router-dom";
 import './App.css';
-import NavBar from "./components/NavBar";
 import Home from "./components/Home";
 import Account from "./components/Account";
 import SignUpForm from "./components/SignUpForm"; 
