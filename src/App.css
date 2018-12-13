@@ -1,0 +1,9 @@
+.homeBackground {
+  background-image: url('https://ak9.picdn.net/shutterstock/videos/18935489/thumb/1.jpg');
+  position: relative;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+}
