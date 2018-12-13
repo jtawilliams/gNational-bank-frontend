@@ -2,7 +2,7 @@ import React,{Fragment} from 'react';
 import { NavLink } from 'react-router-dom';
 
 
-const NavBar = () => {
+const LogOutNavBar = () => {
 	return (
     <Fragment>
       <nav className = "blue-grey">
@@ -10,8 +10,8 @@ const NavBar = () => {
           <div className="nav-wrapper">
             <NavLink to="/"><a className="btn btn-floating">GNB</a></NavLink>
             <ul className="right">
-              <li><NavLink to='/login'>Login</NavLink></li>
-              <li><NavLink to='/signup'>Sign Up</NavLink></li>
+              <li><NavLink to='/accounts'>Accounts</NavLink></li>
+              <li><NavLink to='/'>Log Out</NavLink></li>
             </ul>
           </div>
       </div>
@@ -20,4 +20,4 @@ const NavBar = () => {
 	)
 }
 
- export default NavBar;
+ export default LogOutNavBar;
