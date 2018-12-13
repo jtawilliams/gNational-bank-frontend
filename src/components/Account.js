@@ -6,8 +6,10 @@ const Account = () => {
     return (
         <Fragment>
             <LogOutNavBar />
-            <h1>Accounts Page!</h1>
+            <div className="container">
+            <h2>Your Accounts:</h2>
             <AccountList />
+            </div>
         </Fragment>
     )
 }

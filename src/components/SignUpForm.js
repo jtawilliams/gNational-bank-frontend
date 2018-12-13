@@ -1,11 +1,12 @@
 import React, { Fragment } from 'react'
 import NavBar from './NavBar';
+import { Link } from 'react-router-dom'
 
 const SignUpForm = () => {
     return (
         <Fragment>
             <NavBar />
-				<div class="row container">
+				<div id="signUpForm" class="row container">
 				<form class="col s12">
 				  <div class="row">
 					<div class="input-field col s6">
@@ -33,9 +34,9 @@ const SignUpForm = () => {
 					  <input id="password" type="password" class="validate"></ input>
 					  <label for="password">Password</label>
 					</div>
-					<button class="btn waves-effect waves-light" type="submit" name="action">Submit
+					<Link to='/accounts'><button id="signUpFormButton" class="btn waves-effect waves-light" type="submit" name="action">Submit
 						<i class="material-icons right">send</i>
-					</button>
+					</button></Link>
 				  </div>
 				</form>
 				</div>
