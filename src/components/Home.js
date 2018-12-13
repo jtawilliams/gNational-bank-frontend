@@ -7,9 +7,8 @@ const Home = () => {
 	return (
     <Fragment>
       <NavBar />
-        <h1>Home</h1>
 	      <div className='homeBackground'>
-		      <h1>Galvanize National Bank</ h1>
+		      <h1 className='container'>Galvanize National Bank</ h1>
 	      </ div>
     </ Fragment>
 	)
