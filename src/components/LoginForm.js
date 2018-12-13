@@ -1,13 +1,13 @@
 import React, { Fragment } from 'react'
 import NavBar from './NavBar';
 
-const SignUpForm = () => {
+const LoginForm = () => {
     return (
         <Fragment>
             <NavBar />
-            <h1>Sign Up Form!</h1>
+            <h1>Login Form!</h1>
         </Fragment>
     )
 }
 
-export default SignUpForm 
+export default LoginForm 
