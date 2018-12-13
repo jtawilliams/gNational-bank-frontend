@@ -7,7 +7,33 @@ import SignUpForm from "./components/SignUpForm";
 import LoginForm from './components/LoginForm'; 
 import Transaction from "./components/Transaction";
 
+const transactionsAPI = "https://galvanize-bank.herokuapp.com/transactions"
+
 class App extends Component {
+	constructor() {
+		super()
+		this.state = {
+			transactions: [],
+		}
+	}
+
+	async componentDidMount() {
+		this.loadTransactions()
+	}
+
+	loadTransactions = () => {
+		fetch(transactionsAPI)
+		.then(transactions => transactions.json())
+		.then(transactions => this.setState({transactions}))
+	}
+
+	// handleInput = (event) => {
+	// 	const { value, name } = event.target
+	// 	this.setState({
+	// 		[name]: value
+	// 	})
+	// }
+
   render() {
     return (
 		<Fragment>
@@ -15,7 +41,7 @@ class App extends Component {
 			<Route path = "/accounts" component={Account} />
 			<Route path = "/signup" component={SignUpForm} /> 
 			<Route path = "/login" component={LoginForm} />
-			<Route path="/transactions" component={Transaction} />
+			<Route path="/transactions" render={() => (<Transaction transactions={this.state.transactions}/>)} />
 		</ Fragment>
     );
   }

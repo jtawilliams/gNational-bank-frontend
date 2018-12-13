@@ -4,8 +4,12 @@ import { Link } from 'react-router-dom'
 const AccountList = () => {
     return (
         <Fragment>
-            <span>This will be the account list!</span>
-            <Link to="/transactions"><button>Take me to transactions!</button></Link>
+            <div className="container">
+                <span>We are having technical difficulties. Please proceed to your transactions page.</span>
+                <Link to='/transactions'><button id="signUpFormButton" class="btn waves-effect waves-light" type="submit" name="action">Transactions
+                        <i class="material-icons right">attach_money</i>
+                        </button></Link>
+            </div>
         </Fragment>
     )
 }

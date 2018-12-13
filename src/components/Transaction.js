@@ -2,12 +2,14 @@ import React, { Fragment } from 'react'
 import LogOutNavBar from './LogOutNavBar';
 import TransactionList from './TransactionsList';
 
-const Transaction = () => {
+const Transaction = (props) => {
     return (
         <Fragment>
             <LogOutNavBar />
-            <h1>Transaction Page!</h1>
-            <TransactionList />
+            <div className="container">
+            <h2>Transaction Page!</h2>
+            <TransactionList transactions={props.transactions} />
+            </div>
         </Fragment>
     )
 }
